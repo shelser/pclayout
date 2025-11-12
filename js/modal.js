@@ -1,3 +1,4 @@
+const modal = () => {
 
 const modalBtn = document.querySelector('.course__button');
 const modal = document.querySelector('.modal');
@@ -37,3 +38,6 @@ crossBtn.addEventListener('click', (e) => {
     modal.style.display = '';
 })
 
+};
+
+modal();

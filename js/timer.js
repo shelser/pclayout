@@ -1,3 +1,4 @@
+const timer = () => {
 
 const daysBlock = document.querySelector('.timer__days');
 const hoursBlock = document.querySelector('.timer__hours');
@@ -20,7 +21,7 @@ const numWord = (value, words) => {
 
 const updateTimer = () => {
   const date = new Date();
-  const dateDeadline = new Date('11 november 2025').getTime();
+  const dateDeadline = new Date('13 november 2025').getTime();
   const timeRemaining = (dateDeadline - date) / 1000;
 
   const days = Math.floor(timeRemaining / 60 / 60 / 24);
@@ -61,3 +62,7 @@ const updateTimer = () => {
 
 updateTimer();
 interval = setInterval(updateTimer, 500);
+
+};
+
+timer();
